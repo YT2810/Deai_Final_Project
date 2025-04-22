@@ -152,6 +152,9 @@ importers:
       '@types/node':
         specifier: ^22.13.5
         version: 22.13.5
+      ethers:
+        specifier: ^6.13.5
+        version: 6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       json5:
         specifier: 2.2.3
         version: 2.2.3
@@ -23774,8 +23777,8 @@ snapshots:
   ox@0.4.4(typescript@5.6.3)(zod@3.24.2):
     dependencies:
       '@adraffy/ens-normalize': 1.11.0
-      '@noble/curves': 1.7.0
-      '@noble/hashes': 1.6.1
+      '@noble/curves': 1.8.1
+      '@noble/hashes': 1.7.1
       '@scure/bip32': 1.6.0
       '@scure/bip39': 1.5.0
       abitype: 1.0.7(typescript@5.6.3)(zod@3.24.2)
@@ -27037,8 +27040,8 @@ snapshots:
 
   webauthn-p256@0.0.10:
     dependencies:
-      '@noble/curves': 1.7.0
-      '@noble/hashes': 1.6.1
+      '@noble/curves': 1.8.1
+      '@noble/hashes': 1.7.1
 
   webidl-conversions@3.0.1: {}
 
