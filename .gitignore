@@ -1,0 +1,19 @@
+# ElizaOS specific ignores within the eliza subfolder
+eliza/node_modules/
+eliza/agent/node_modules/
+eliza/client/node_modules/
+eliza/.env
+eliza/agent/data/
+eliza/dist/
+eliza/packages/*/dist/
+eliza/client/dist/
+eliza/client/src/lib/info.json
+
+# General Python ignores (if you add Python later)
+*.pyc
+__pycache__/
+.venv/
+
+# OS specific ignores
+.DS_Store
+Thumbs.db
