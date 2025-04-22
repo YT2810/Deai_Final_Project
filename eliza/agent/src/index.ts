@@ -18,7 +18,9 @@ import {
     settings,
     stringToUuid,
     validateCharacterConfig,
+    type Action,
 } from "@elizaos/core";
+import { getLatestContentAction } from './actions/getLatestContentAction';
 import { defaultCharacter } from "./defaultCharacter.ts";
 
 import { bootstrapPlugin } from "@elizaos/plugin-bootstrap";
@@ -633,6 +635,7 @@ export async function createAgent(
         providers: [],
         managers: [],
         fetch: logFetch,
+        actions: [ getLatestContentAction ],
         // verifiableInferenceAdapter,
     });
 }
@@ -909,3 +912,8 @@ if (
         console.error("unhandledRejection", err);
     });
 }
+
+export const actions: Action[] = [
+    getLatestContentAction,
+    // verifyNftAccessAction, // Add future actions here
+  ];
